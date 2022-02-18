@@ -1,0 +1,289 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", "sans-serif";
+}
+
+footer{
+    background-color: #365b94;
+    color: #ffff;
+    padding: 20px;
+}
+
+footer p{
+    text-align: center;
+}
+
+header{
+    background-color: #365b94;
+    color: #ffff;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.menu ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.menu ul li a{
+    color: #ffff;
+    font-size:18px;
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+.menu ul li a:hover{
+    border-bottom:5px solid #c8fce0;
+    padding-bottom:5px;
+    color: #c8fce0;
+
+}
+
+.page-title{
+    text-align: center;
+    transition: 0.5s;
+    margin-bottom: 20px;
+}
+
+.page-title:hover {
+    color:#365b94;
+    cursor: default;
+}
+
+.signup-form{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.myForm{
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+input{
+    width:100%;
+    padding: 8px;
+    border-width: 0 0 2px 0;
+}
+
+.btn-submit{
+    
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #ddeee5;
+    color: #000;
+    border:none;
+    border-radius: 5px;
+}
+
+.btn-submit:hover{
+    background-color: #c8fce0;
+    cursor: pointer;
+}
+
+.signup-form input:focus{
+    border-width: 0 0 2px 0;
+    border-color: #365b94;
+    outline: none;
+}
+
+.form-element{
+    margin-bottom: 20px;
+}
+
+.errors p{
+    background-color: #8f1818;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.success p{
+    background-color:rgb(45, 214, 110);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.card {
+    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: 25%;
+    background-color: rgb(255,255,255);
+    transition: 0.5s;
+    border-radius: 5px;
+    color: rgba(0,0,0);
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.card-no{
+    font-size: 2rem;
+    padding: 10px;
+    margin: 20px;
+}
+
+.card a{
+    padding: 10px;
+    color: #365b94;
+    text-decoration: none;
+}
+
+.card:hover{
+    background-color:#c8fce0;
+    color: #365b94;
+}
+
+.card a:hover{
+    background-color: #608ed5;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-table-top {
+    text-decoration: none;
+    background-color: #c8fce0;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    margin: 5px 10px;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.btn-table-top:hover{
+    background-color:rgb(45, 214, 110);
+    color: #fff;
+}
+
+table, th, td{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+table{
+    width: 95%;
+    margin: 10px auto;
+}
+
+th,td{
+    padding: 10px;
+}
+
+.edit, .delete, .deactivate{
+    text-decoration: none;
+    display:block;
+    padding: 6px;
+    border-radius: 6px;
+    color: #fff;
+    font-size:12px;
+    margin: 1px;
+}
+
+.edit{
+    background-color:rgb(34, 119, 66);
+}
+.edit:hover{
+    background-color:rgb(17, 59, 33);
+}
+.delete{
+    background-color:#8f1818;
+}
+.delete:hover{
+    background-color:#380a0a;
+}
+.deactivate{
+    background-color:rgb(214, 155, 45);
+}
+.deactivate:hover{
+    background-color:rgb(73, 53, 15);
+}
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+  
+.child1,
+.child2 {
+    width: 40%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+}
+  
+.post-parent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: column;
+    align-content: center;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+  
+.post-image {
+    overflow: hidden;
+}
+  
+.post-image img {
+    width: 100%;
+    transition: 0.5s;
+}
+  
+.post-image img:hover {
+    transform: scale(1.5);
+}
+  
+.post-title {
+    margin: 0 auto 20px auto;
+}
+  
+.post-content {
+    margin-bottom: 20px;
+}
+  
+.icons {
+    margin: 20px;
+}
+  
+.icons i {
+    margin: 0 15px;
+}
+  
+.icons i:hover {
+    color: red;
+}
